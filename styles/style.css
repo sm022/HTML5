@@ -215,12 +215,14 @@ body {
 @keyframes moveEffect{
   0%{
     font-size: 12px;
-    color: rgba(0,0,0,0.2);
+    color: hsla(0, -0%, -0%, -0);
+    /* color: rgba(0,0,0,0); */
     transform: translate(0,0);
   }
   100%{
     font-size: 24px;
-    color: rgba(0,0,0,1);
+    color: hsla(0, 0%, 0%, 1);
+    /* color: rgba(0,0,0,1); */
     padding: 75px 0 0 400px;
     transform: translate(400,75px);
   }
@@ -229,7 +231,6 @@ body {
 .visual {
   background: pink;
   height: 120px;
-  position: relative;
 }
 
 .visual-text{
@@ -237,8 +238,9 @@ body {
   /* background-color: coral; */
   animation-name: moveEffect;
   animation-duration: 2000ms;
+  animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-  display: inline-block;
+  position: absolute; 
 }
 
 /* 메인 */
