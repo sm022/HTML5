@@ -1,5 +1,4 @@
 @import url(./fontello.css);
-@import url(./fonts.css);
 @import url(./normalize.css);
 @import url(./reset.css);
 
@@ -466,17 +465,14 @@ body {
   border: 1px solid #aaa;
   border-radius: 15px 15px 0 0;
   padding: 15px 25px 10px;
-  /* width: 300px; */
 }
 
 .search-form-inner {
-  /* background-color: yellow; */
   display: flex;
   flex-flow: row nowrap;
 }
 
 .form-group {
-  /* background-color: pink; */
   flex-grow: 1;
   display: flex;
   flex-flow: row nowrap;
@@ -484,8 +480,7 @@ body {
   padding-right: 10px;
 }
 .form-group-label {
-  /* background-color: lime; */
-  white-space: nowrap;
+  flex-shrink: 0;
   margin-right: 10px;
 }
 .form-group-input {
@@ -494,12 +489,13 @@ body {
   height: 24px;
   padding: 1px 1px 1px 5px;
   flex-grow: 1;
-  /* min-width: 0;
-  max-width: 100%; */
+  min-width: 0;
+  width: 100%;
+  font-size: 1.2rem;
 }
 
 .search-button {
-  white-space: nowrap;
+  flex-shrink: 0;
   background-color: #000;
   color: #fff;
   height: 24px;
@@ -507,6 +503,70 @@ body {
   border-radius: 3px;
   padding: 0 10px;
   font-size: 1.2rem;
+}
+
+/* 공지사항 및 자료실 */
+.board {
+  margin-top: 20px;
+  position: relative;
+}
+
+.tab-list{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.tab{
+  border: 1px solid #aaa;
+  background-color: #ccc;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 10px;
+  color: #666;
+}
+
+.is-select.tab{
+  background-color: #fff;
+  color: #e85e2c;
+  border-color: currentColor currentColor #fff currentColor;
+}
+
+.tab-panel {
+  display: none;
+  margin-top: 15px;
+}
+
+.is-select.tab-panel {
+  display: block;
+}
+
+.board-list li{
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.board-list a{
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.board-list time{
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+
+.board-more{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+}
+
+.icon-plus ::before{
+  color: hsla(110, 50%, 30%, 1);
 }
 
 /* 슬로건 */
