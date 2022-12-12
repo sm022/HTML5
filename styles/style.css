@@ -1,9 +1,10 @@
-@import url(./fonts.css);
+@import url(./fontello.css);
 @import url(./normalize.css);
 @import url(./reset.css);
 
 /* 숨김 콘텐츠 */
-.a11y-hidden, legend {
+.a11y-hidden,
+legend {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -29,23 +30,16 @@ a {
 }
 
 /* 본문 스타일 */
-/* em, rem 단위를 사용해보기 */
-body {  
-  font-size: 1.4rem;
+body {
   color: #212121;
+  font-size: 1.4rem;
   font-family: "Pretendard Variable", Pretendard, -apple-system,
-  BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
-  "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  /* background-color: #ccc;
-  background-image: url(./images/bg_flower.png), 
-    linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
-  background-repeat: no-repeat, repeat;
-  background-position: 50% 0, 0 0;
-  /* background-size: 100px 100px; */
-  /* background-attachment: fixed; */
-  background: url(./images/bg_flower.png) no-repeat 50% 0,
-   #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%) repeat 0 0;
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  background: url("./images/bg_flower.png") no-repeat 50% 0,
+    #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%)
+      repeat 0 0;
 }
 
 /* 레이아웃 */
@@ -209,7 +203,7 @@ body {
 
 .sub-menu a {
   display: inline-block;
-  padding: 10px 0;
+  padding: 6px 0;
 }
 
 .sub-menu a:hover,
@@ -218,28 +212,25 @@ body {
 }
 
 /* 비주얼 */
-/* at sign rule - 정의나 선언 */
-@keyframes moveEffect{
-  0%{
+@keyframes moveEffect {
+  0% {
     font-size: 12px;
-    color: hsla(0, -0%, -0%, -0);
-    /* color: rgba(0,0,0,0); */
-    transform: translate(0,0);
+    color: hsla(0, 0%, 0%, 0);
+    transform: translate(0, 0);
   }
-  100%{
+
+  100% {
     font-size: 24px;
     color: hsla(0, 0%, 0%, 1);
-    /* color: rgba(0,0,0,1); */
-    padding: 75px 0 0 400px;
-    transform: translate(400,75px);
+    transform: translate(400px, 75px);
   }
 }
 
-@keyframes fadeEffect{
-  0%{
+@keyframes fadeEffect {
+  0% {
     opacity: 1;
   }
-  100%{
+  100% {
     opacity: 0;
   }
 }
@@ -257,26 +248,25 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  animation: fadeEffect 2000ms infinite alternate
+  animation: fadeEffect 2000ms infinite alternate;
 }
 
-.visual::before{
-  background: url(./images/ani_flower_01.png) no-repeat 0 -10px,
-   url(./images/ani_flower_02.png) no-repeat 600px 0;
+.visual::before {
+  background: url("./images/ani_flower_01.png") no-repeat 0 -10px,
+    url("./images/ani_flower_02.png") no-repeat 600px 0;
 }
 
-.visual::after{ 
-  background: url(./images/ani_flower_03.png) no-repeat 300px 0,
-   url(./images/ani_flower_04.png) no-repeat 800px 0;
-   animation-delay: 2000ms;
+.visual::after {
+  background: url("./images/ani_flower_03.png") no-repeat 300px 0,
+    url("./images/ani_flower_04.png") no-repeat 800px 0;
+  animation-delay: 1000ms;
 }
 
-.visual-text{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  /* background-color: coral; */
+.visual-text {
+  font-family: Georgia, "Times New Roman", Times, serif;
   animation: moveEffect 400ms ease-in-out forwards;
   position: relative;
-  z-index: 1; 
+  z-index: 1;
 }
 
 /* 메인 */
@@ -296,53 +286,56 @@ body {
 .group1 {
   width: 250px;
 }
+
 .group2 {
-  background: salmon;
+  background-color: salmon;
   width: 380px;
 }
+
 .group3 {
   background-color: gold;
   width: 190px;
 }
 
 /* 로그인 */
-.login{
-  box-shadow: 5px 5px 0 0 #ccc; 
+.login {
+  box-shadow: 5px 5px 0 0 #ccc;
   background: orange radial-gradient(circle at right top, orange, orangered);
   padding: 10px;
   border-radius: 5px;
 }
 
-.login-title{
-  color: yellow;
+.login-title {
+  color: #ff0;
   font-size: 15px;
   font-weight: 700;
   text-indent: 10px;
 }
 
-.login-form{
+.login-form {
   background-color: #fff;
   margin-top: 10px;
   border-radius: 5px 5px 0 0;
   padding: 10px 10px 0 10px;
 }
 
-.login-form fieldset{
+.login-form fieldset {
   position: relative;
   border-bottom: 1px solid #aaa;
-  padding-bottom: 5px; 
+  padding-bottom: 5px;
 }
 
-.user-email, .user-pw {
+.user-email,
+.user-pw {
   margin-bottom: 5px;
 }
 
-.login-form label{
+.login-form label {
   display: inline-block;
   width: 4em;
 }
 
-.login form input{
+.login-form input {
   width: 90px;
   height: 24px;
   border: 1px solid #aaa;
@@ -350,7 +343,7 @@ body {
   border-radius: 3px;
 }
 
-.login-button{
+.login-button {
   position: absolute;
   top: 0;
   right: 0;
@@ -367,101 +360,104 @@ body {
   background-color: #fff;
   border-radius: 0 0 5px 5px;
   padding: 4px 10px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+}
+.sign li {
+  display: inline-block;
 }
 
-sign a{
-  display: block;
+.sign li:first-child {
+  margin-right: 16px;
+}
+
+.sign a {
+  display: inline-block;
   padding: 6px 0;
   letter-spacing: -1px;
 }
 
-.sign a::before{
-  content: "\e804";
-  font-family: fontello;
-  margin-right: 8px;
+.sign a::before {
   color: orangered;
 }
 
 /* 유효성 검사 배너 */
-.validation-list{
+.validation-list {
   margin-top: 25px;
 }
 
-.validation-list li{
+.validation-list li {
   margin-top: 10px;
 }
 
-.validation-list a{
-  display: block;
-  background: url(./images/validation_icon.png) no-repeat 25px 50%, 
+.validation-list a {
+  background: url("./images/validation_icon.png") no-repeat 25px 50%,
     #ccc linear-gradient(to bottom, #ccc, #eee);
-  padding: 8px 15px 8px 55px;
+  padding: 0 15px 0 55px;
   border-radius: 30px;
+  line-height: 30px;
   border: 1px solid #aaa;
+  cursor: pointer;
+  display: block;
 }
 
-.validation-list a:hover, 
-.validation-list a:focus{
+.validation-list a:hover,
+.validation-list a:focus {
   color: #f00;
 }
 
 /* 웹 관련 용어 */
-.term{
+.term {
   margin-top: 20px;
   border: 1px solid #aaa;
   border-radius: 5px;
   padding: 10px 15px;
-  background:#ccc linear-gradient(to bottom, #ccc, #eee);
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
 }
 
-.term-title{
+.term-title {
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-.term-list{
+.term-list {
   margin-top: 10px;
 }
 
-.term-list div{
+.term-list div {
   margin-top: 10px;
   display: flow-root;
 }
 
-.term-list-subject, 
-.term-list-brief{
+.term-list-subject,
+.term-list-brief {
   float: right;
   width: 145px;
 }
 
-.term-list-subject{
+.term-list-subject {
   color: #296897;
   font-weight: 500;
 }
 
-.term-list-thumbnail{
+.term-list-thumbnail {
   float: left;
 }
 
-.term-list-thumbnail img{
+.term-list-thumbnail img {
   vertical-align: middle;
 }
 
-.term-list-brief{
+.term-list-brief {
   margin-top: 5px;
-  line-height: 1.5;  
+  line-height: 1.5;
 }
 
-.cross .term-list-subject
-.cross .term-list-brief{
+.cross .term-list-subject,
+.cross .term-list-brief {
   float: left;
 }
 
-.cross .term-list-thumbnail{
-  float: left;
+.cross .term-list-thumbnail {
+  float: right;
 }
 
 /* 슬로건 */
