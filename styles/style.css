@@ -577,7 +577,7 @@ body {
 }
 
 .news::before{
-  content: ""
+  content: "";
   position: absolute;
   top: 35px;
   left: 0;
@@ -620,6 +620,11 @@ body {
   top: 2px;
   left: 0;
   text-align: center;
+}
+
+.news-item-thumbnail img{
+  box-shadow: 0 15px 10px 5px #ccc;
+  margin-bottom: 15px;
 }
 
 .news-more {
