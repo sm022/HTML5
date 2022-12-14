@@ -646,6 +646,35 @@ body {
   color: #e85e2c;
 }
 
+.text-xl{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.margin-top-default{
+  margin-top: 20px;
+}
+
+.margin-top-thin{
+  margin-top: 5px;
+}
+
+.margin-top-normal{
+  margin-top: 10px;
+}
+
+.margin-top-large{
+  margin-top: 15px;
+}
+
+.margin-top-10{
+  margin-top: 10px;
+}
+
+.margin-top-15{
+  margin-top: 15px;
+}
+
 .event{
   border-bottom: 1px solid #aaa;
 }
@@ -727,6 +756,38 @@ body {
 .related-list:focus{
   height: 147px;
   padding: 10px 0;
+}
+
+/* 인기 사이트 */
+
+.favorite{
+  position: relative;
+}
+
+.favorite-list{
+  background-color: yellow;
+  list-style-type: none;
+}
+
+.favorite-list li{
+  margin-top: 10px;
+}
+
+.favorite-list li::before{
+  content: "1";
+  background-color: #aaa;
+  color: #fff;
+  padding: 1px 6px;
+  font-size: 1.2rem;
+  margin-right: 5px;
+  border-radius: 3px;
+  }
+
+.favorite-more{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
 }
 
 /* 슬로건 */
