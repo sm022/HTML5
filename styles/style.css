@@ -34,7 +34,6 @@ body{
 .header{
   background: #fff;
   padding: 0 30px;
-  height: 15vh;
   border-radius: 0 0 15px 15px;
 }
 
@@ -49,65 +48,27 @@ body{
   text-transform: uppercase;
 }
 
-/* :before /::before -> first child */
-/* :after /::after -> last child */
-
-/* 겹침 Cascading */
-/* 우선순위 규칙 */
-/* li (Type Selector) - 1점 */
-/* .first (Class Selector) - 10점 */
-/* #item (ID Selector) - 100점 */
-
-/* .member -> 10점, li -> 1점, ::before -> 1점 => 12점 */
-/* .member li::before{
-  content: ":";
-} */
-/* .member -> 10점, .first -> 10점, ::before -> 1점 => 21점 */
-/* .member .first::before{
-  content: "첫번째 자식요소를 생성합니다.";
-} */
-/* .member li:first-child::before{
-  content: "";
-} */
-
-/* .member li:nth-child(n + 2)::before{
-  content: ":";
-  border-color: skyblue;
-  } */
-
-
-
 /* 비주얼 */
 .visual{
-  background: orange;
-  height: 10vh;
+  height: 120px;
 }
 /* 메인 */
 .main{
-  background: lightgreen;
+  background: #fff;
   min-height: 450px; 
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 30px;
-}
+  }
 
 /* 슬로건 */
   .slogan{
   background: skyblue;
-  height: 10vh;
-}
+  }
 /* 푸터 */
 .footer{
   background: gray;
 }
 .footer-inner{
   background: silver;
-  height: 15vh;
-  width: 500px;
-  overflow: hidden;
-}
+  }
 
 
 
