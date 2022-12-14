@@ -764,14 +764,12 @@ body {
 }
 
 .favorite-list{
-  background-color: yellow;
   list-style-type: none;
 }
 
 .favorite-list li{
   margin-top: 10px;
   counter-increment: number;  
-  background-color: pink;
   position: relative;
 }
 
@@ -798,8 +796,8 @@ body {
   margin-top: -6px;
   width: 20px;
   height: 11px;
-  margin-top: auto;
-  background: lime url(./images/rank.png) no-repeat 100% 0;
+  margin-left: auto;
+  background: url(./images/rank.png) no-repeat 100% 0;
 }
 
 .stop{
