@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 10px;
 }
 
@@ -80,73 +80,67 @@ body {
 }
 
 /* 신규 이벤트 및 관련 사이트 */
-.gradient-effect{
+.gradient-effect {
   border: 1px solid #aaa;
   border-radius: 5px;
   padding: 10px;
   background: #ccc linear-gradient(to bottom, #ccc, #eee);
 }
 
-.text-xl{
+.text-xl {
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-.accent-color{
-  color: #a52a5a
+.accent-color {
+  color: #a52a2a;
 }
 
-.event-thumbnail, 
-.event-brief{
-  margin: 10px 0;
+.margin-top-default {
+  margin-top: 20px;
 }
 
-.event-thumbnail img{
-  border: 1px solid #aaa;
-  box-shadow: 5px 5px 0 0 #ccc;
-}
-
-.event-button-wrapper{
-  background-color: yellow;
-  overflow: hidden;
-  /* padding: 2px; */
+.event {
   display: flex;
-  flex-flow: row nowrap;
-  align-items: flex-start;
-  gap: 5px;
-  }
-
-.event-button{
-  width: 19px;
-  border: 0;
-  height: 18px;
-  padding: 0;
-  background: aqua url(./images/back_forward.png) no-repeat;
-}
-
-.event-button-next{
-  background-position: 100% 0;
-}
-
-.event{
-  display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   border-bottom: 1px solid #aaa;
 }
 
-.event-title{
-  background-color: pink;
+.event-button-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  gap: 5px;
 }
 
-#eventDetail{
-  background-color: aqua;
+.event-button {
+  width: 19px;
+  border: 0;
+  height: 18px;
+  padding: 0;
+  background: url("./images/back_forward.png") no-repeat;
+}
+
+.event-button-next {
+  background-position: 100% 0;
+}
+
+.event-thumbnail,
+.event-brief {
+  margin: 10px 0;
+}
+
+.event-thumbnail img {
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #ccc;
+}
+
+.related {
+  margin-top: 10px;
 }
 
 /* 인기 사이트 */
-.margin-top-default{
-  margin-top: 20px;
-}
 
 /* 슬로건 */
 .slogan {
